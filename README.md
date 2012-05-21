@@ -1,4 +1,6 @@
 ninja
 =====
 
-Client side js framework
+Client side javascript framework to work with Django and Tastypie
+
+
