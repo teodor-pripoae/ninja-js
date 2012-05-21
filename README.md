@@ -1,7 +1,7 @@
 #ninja
 
 
-Client side javascript framework to work with Django and Tastypie
+Client side javascript framework to work with Django and Tastypie. Depends on underscore.js and jQuery.
 
 ## renderTemplate
     // Populates container with result generated from template template_name with context
