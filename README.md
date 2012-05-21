@@ -50,6 +50,15 @@ Client side javascript framework to work with Django and Tastypie. Depends on un
       }
     }
     
+# Views
+    <script type="text/html" id="template_notebooks_index">
+      <ul>
+        <% _.each(notebooks, function (notebook) { %>
+          <li data-id="<%= notebook.id %>"><%= notebook.name %></li>
+        <% }) %>
+      </ul>
+    </script>
+    
 # Before filters
     // global before filters
     before_filters = {
@@ -110,11 +119,3 @@ Client side javascript framework to work with Django and Tastypie. Depends on un
       /* [{id:1, name: "foobar"}, {id:2, name: "another dummy name"}] */
     })
     
-# Views
-    <script type="text/html" id="template_notebooks_index">
-      <ul>
-        <% _.each(notebooks, function (notebook) { %>
-          <li data-id="<%= notebook.id %>"><%= notebook.name %></li>
-        <% }) %>
-      </ul>
-    </script>
